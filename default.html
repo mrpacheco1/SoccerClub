@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+<Title>
+Alianza FC | Brooklyn 
+</title>
+<head>
+<meta charset="uft-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="Javascript/jquery.sidr.min.js"></script>
+	<Nav>
+
+		<ul>
+			<li><a href="default.html" >home</a></li>
+			<li><a href="bio.html">2</a></li>
+			<li><a href="portfolio.html">3</a></li>
+			<li><a href="soccer.html">4</a></li>
+			<li><a href="photography.html">5</a></li>
+		
+		</ul>
+		<div class="handle"><img class="mobileicon"src="Images/menuicon.png"><p class="mobilename">Menu</p></div>
+		</Nav>
+
+	</head>
+<body>
+
+<a id="simple-menu" href="#sidr"><img class="mobileicon"src="Images/menuicon.png"><p class="mobilename">Alianza FC Brooklyn</p></a>
+ 
+<div id="sidr">
+  <!-- Your content -->
+  <ul>
+    <li><a href="#">List 1</a></li>
+    <li class="active"><a href="#">List 2</a></li>
+    <li><a href="#">List 3</a></li>
+  </ul>
+</div>
+ 
+
+
+<div id="footer"><a href="#"><p class="footername">back to top</p><img class="footarrow"src="Images/arrowup.png"></a></div>
+<script>
+$(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+</script>
+<script>
+$(document).ready(function () {
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('show');
+		});		
+});
+</script>
+</body>
+</html>
